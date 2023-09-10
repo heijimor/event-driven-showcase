@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  reservation:
+    build:
+      context: ./reservation
+      dockerfile: Dockerfile
+    restart: on-failure
+    networks:
+      - event-network
+    volumes:
+      - ./reservation:/app
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+
+networks:
+  event-network:
+    name: event-network
+    driver: "bridge"
