@@ -1,1 +1,6 @@
 reservation/node_modules
+payment/node_modules
+client-app/node_modules
+elk/elasticsearch/data/*
+elk/logstash/*
+db/*
