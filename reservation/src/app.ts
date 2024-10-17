@@ -1,5 +1,5 @@
 import express from "express";
-import routerReservation from "./routes/reservation";
+import routerReservation from "./app/routes/reservation";
 
 const app = express();
 const port = 3000;
